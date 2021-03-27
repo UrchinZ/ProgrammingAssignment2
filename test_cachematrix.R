@@ -16,3 +16,10 @@ cached_A = makeCacheMatrix(A)
 cached_solve_A = cacheSolve(cached_A)
 print(cached_solve_A)
 solve_A == cached_solve_A
+
+# test set functions
+randA <- matrix(rnorm(9), nrow=3)
+cached_A = makeCacheMatrix(randA)
+is.null(cached_A$getinv())
+
+
